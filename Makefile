@@ -1,8 +1,16 @@
 SHELL=/bin/bash
-BAKSRC=~/.vimrc ~/.bashrc
+BAKSRC=~/.vimrc ~/.bashrc /bin/bash
+
+download:
+	git pull confBak master
 
 update:
-	for src in BAKSRC\
+	for src in $(BAKSRC);\
 	do\
-		echo $$src;\
+		cp $$src ./;\
 	done
+	git add .
+	git commit -m "naive"
+	git push confBak master
+
+

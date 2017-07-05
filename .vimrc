@@ -63,6 +63,9 @@
 	" Put your non-Plugin stuff after this line
 
 "syntax choice
+	""if exists(filetype_on)
+	""	echom "hahaha"
+	""endif
 "
 
 "map  :help :map-modes 
