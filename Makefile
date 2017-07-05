@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-BAKSRC=~/.vimrc ~/.bashrc /bin/bash
+BAKSRC=~/.vimrc ~/.bashrc
 
 download:
 	git pull confBak master
