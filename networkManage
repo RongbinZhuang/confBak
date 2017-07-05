@@ -1,0 +1,9 @@
+# setup ethernet without networkmanager
+	ifconfig eth0 (ip address) netmask (net mask:255.255.255.0)
+	route add gw (host gateway)
+	vim + /etc/resolv.conf
+		add nameserver DNS1
+		add nameserver DNS2
+	ifconfig eth0 up
+		
+
