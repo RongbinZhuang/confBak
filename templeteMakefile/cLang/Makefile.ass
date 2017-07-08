@@ -1,0 +1,9 @@
+.PHONY:clean help list
+clean:
+	$(RM) $(OBJECTS)
+
+help:
+	$(MAKE) --print-data-base
+
+list:
+	@echo "$(.VARIABLES)" | tr ' ' '\n' | grep -v MAKEF

@@ -18,5 +18,5 @@ updatefile:
 
 .PHONY:notice
 notice:
-	@echo done
+	@echo -e "\ndone"
 
